@@ -10,3 +10,13 @@ def input_to_index(user_input)
   index = user_input.to_i - 1
   return index
 end
+
+def position_taken?(board, index)
+  if board[index] == " " || board[index] == ""
+    return false
+  elsif board[index] == nil
+    return false
+  else
+    return true
+  end
+end
